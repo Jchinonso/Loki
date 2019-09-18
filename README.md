@@ -17,12 +17,12 @@ Technologies Used
 Installation
 ------------
 1.  Ensure you have NodeJs installed
-2. Go to src/config/token.js file and paste your ACCESS_KEY
 2.  Clone the repository `git clone https://github.com/Jchinonso/Loki.git`
 3.  Change your directory `cd LOki`
 4.  Install all dependencies `npm install or yarn install`
-5.  Start the app `npm start`
-6. Install an expo client on your mobile device then scan the QR code on the console. You can run on simulator with this command
+5. Go to src/config/token.js file and paste your ACCESS_KEY
+6.  Start the app `npm start`
+7. Install an expo client on your mobile device then scan the QR code on the console. You can run on simulator with this command
 `npm run android` or `npm run ios`
 
 
