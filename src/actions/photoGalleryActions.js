@@ -8,7 +8,6 @@ export function getUsersRequest() {
   };
 }
 
-
 export function getUsersFailure() {
   return {
     type: types.GET_USER_FAILURE
@@ -31,7 +30,7 @@ export function getUsers(user) {
         headers: { "Content-Type": "application/json", "Accept-Version": "v1" }
       })
       .then(response => {
-        dispatch(getUsersSuccess(response.data.results))
+        dispatch(getUsersSuccess(response.data.results));
       })
       .catch(error => {
         console.log(error);

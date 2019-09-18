@@ -10,6 +10,11 @@ export default class PreviewComponent extends Component {
     };
   }
 
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.state.params.user.name
+    };
+  };
   render() {
     const user = this.props.navigation.state.params.user;
     const singleImageList = user.photos.map(item => item.urls.regular);
