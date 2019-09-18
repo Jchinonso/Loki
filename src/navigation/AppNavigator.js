@@ -12,7 +12,7 @@ const AppNavigator = createStackNavigator(
     ListImageComponent,
     PreviewComponent
   },
-  { initialRouteName: 'ListImageComponent'}
+  { initialRouteName: 'SearchComponent'}
 );
 
 const AppContainer = createAppContainer(AppNavigator);
