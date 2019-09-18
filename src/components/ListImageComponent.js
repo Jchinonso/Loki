@@ -21,26 +21,13 @@ export default class PreviewComponent extends Component {
   }
 
   render() {
-    // const user = this.props.navigation.state.params.user;
-    // const images = user.photos.map(item => {
-    //   return {
-    //     source: {
-    //       uri: item.urls.regular
-    //     },
-    //     title: "Paris",
-    //     width: 806,
-    //     height: 720
-    //   };
-    // });
-    // console.log(images);
     return (
       <Container>
-        <Header />
         <Content>
-          <Card>
+          <Card style={{marginLeft: 10, marginRight: 10}}>
             <CardItem cardBody>
               <Image
-                source={{ uri: "Image URL" }}
+                source={{ uri: "https://images.unsplash.com/photo-1530587191325-3db32d826c18?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" }}
                 style={{ height: 200, width: null, flex: 1 }}
               />
             </CardItem>

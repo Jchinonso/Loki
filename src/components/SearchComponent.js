@@ -52,12 +52,6 @@ class SearchComponent extends Component {
               <Text style={{fontFamily: 'campton'}}> Click Me!</Text>
             </Button>
           </Item>
-          {/* <Card style={styles.card}>
-            <CardItem bordered >
-              <Text>Google Plus</Text>
-            </CardItem>
-          </Card> */}
-
           <Card style={styles.card}>
             {this.props.users.map((item, index) => (
               <ListItem
@@ -68,10 +62,9 @@ class SearchComponent extends Component {
                 bottomDivider
                 chevron
                 onPress={() => this.handlePressUser(item)}
-                friction={90} //
+                friction={90} 
                 titleStyle={{ fontFamily: 'campton', fontWeight: 'bold' }}
-                tension={100} // These props are passed to the parent component (here TouchableScale)
-                activeScale={0.95} //
+                tension={100} 
                 chevron={{ color: 'white' }}
                 showsVerticalScrollIndicator={false}
               />
