@@ -1,1 +1,1 @@
-export const YOUR_ACCESS_KEY = "c6cde156de468d18a9ff8336a488e6eae3a76ca7d6b8fcb2919f439a22af04a0"
+export const YOUR_ACCESS_KEY = "{ACCESS_KEY}"

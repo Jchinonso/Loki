@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, Image, ScrollView, TouchableOpacity } from "react-native";
+import { View, Image, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
 import ImageView from "react-native-image-view";
-import { Card, CardItem, Text } from "native-base";
+import { Card, CardItem} from "native-base";
 export default class PreviewComponent extends Component {
   constructor(props) {
     super(props);
@@ -41,20 +41,20 @@ export default class PreviewComponent extends Component {
                 })
               }
             >
-              <Card style={{ marginLeft: 10, marginRight: 10 }}>
+              <Card style={styles.card}>
                 <CardItem cardBody>
                   <Image
                     source={{
                       uri: item
                     }}
-                    style={{ height: 200, width: null, flex: 1 }}
+                    style={styles.image}
                   />
                 </CardItem>
               </Card>
             </TouchableOpacity>
           ))}
         </ScrollView>
-        {this.state.clicked ? (
+        {clicked ? (
           <ImageView
             onClose={() =>
               this.setState({
@@ -69,3 +69,9 @@ export default class PreviewComponent extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+ 
+  card: { marginLeft: 10, marginRight: 10 },
+  image:{ height: 200, width: null, flex: 1 }
+});

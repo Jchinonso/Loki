@@ -7,7 +7,6 @@ import {
   Button,
   Text,
   Card,
-  CardItem
 } from "native-base";
 import { ListItem } from "react-native-elements";
 import TouchableScale from 'react-native-touchable-scale'; 

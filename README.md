@@ -17,6 +17,7 @@ Technologies Used
 Installation
 ------------
 1.  Ensure you have NodeJs installed
+2. Go to src/config/token.js file and paste your ACCESS_KEY
 2.  Clone the repository `git clone https://github.com/Jchinonso/Loki.git`
 3.  Change your directory `cd LOki`
 4.  Install all dependencies `npm install or yarn install`
